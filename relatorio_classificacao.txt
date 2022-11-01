@@ -31,9 +31,10 @@ Como o resultado já havia sido bom sem mexer nos hiperparâmetros, foi feito o 
 
 Abaixo, temos os resultados. 
 
-- Escolha do modelo e matriz de confusão
+- Escolha do modelo, curva de aprendizado e matriz de confusão
 
-De fato, o modelo escolhido seria o de Regressão Logística, que possui tanto acurácia quanto log loss bastante satisfatórios. Pela acurácia dos dados de teste, não existe uma diferença absurda para a acurácia dos dados de treinamento (100%) que sugeririam overfitting. 
+De fato, o modelo escolhido seria o de Regressão Logística, que possui tanto acurácia quanto log loss bastante satisfatórios. Pela acurácia dos dados de teste, não existe uma diferença para a acurácia dos dados de treinamento (100%) que sugeririam um overfitting. A curva de aprendizado foi gerada, mas é importante deixar claro que ela faz uso do X e Y completos, com o X já em formato TF-IDF. Por isso, tem uma possibilidade do gráfico incluir esse "data leakage".
+
 Para enxergar melhor o resultado do modelo, foi plotada a Matriz de Confusão (cujas funções mostradas em sala de aula foram utilizadas paara considerar a matriz a partir da Stratified K-Fold Cross Validation). Note que o resultado é bom, pois as diagonais estão com a maior concentração. Isso indica que o modelo faz mais previsão correta do que incorreta além de não parecer ter nenhum problema específico com alguma classe.
 
 [4] https://medium.com/@akshayc123/logistic-regression-87f7fbb4aaf6#:~:text=Logistic%20Regression%20(LR)%20is%20a,well%20on%20linearly%20separable%20classes.
